@@ -1,0 +1,28 @@
+.upcoming-project-box:hover{
+    border: 2px solid #e72129;
+    background: #fae2e2;
+    transition: all 0.2s ease;
+
+}
+
+/* -------- SHAPE CSS ------------  */
+
+.custom-shape-divider-bottom-1708147014 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1708147014 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 117px;
+}
+
+.custom-shape-divider-bottom-1708147014 .shape-fill {
+    fill: #FFFFFF;
+}

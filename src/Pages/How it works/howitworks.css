@@ -1,0 +1,165 @@
+.road-map-main {
+  padding: 150px 0 51px;
+  .road-map-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    @media (max-width: 991px) {
+      margin-bottom: 25px;
+      height: auto;
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      clear: both;
+      display: block;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      clear: both;
+      display: block;
+    }
+    .road-map-circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 25px solid transparent;
+      border-top-color: #ec3339;
+      border-right-color: #ec3339;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      transform: rotate(45deg);
+      @media (max-width: 992px) {
+        position: unset;
+        border: 25px solid #ec3339;
+      }
+
+      .road-map-circle-text {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background-color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #ec3339;
+        box-shadow: 0px 0px 10px 5px #00000021;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(-45deg);
+      }
+    }
+
+    /* ----------- HOVER EFFECT ------------ */
+
+    .road-map-circle:hover{
+      background: #ec3339;
+      color: white;
+    }
+
+    .road-map-circle:hover .road-map-card{
+      background: #fff;
+      color: black;
+    }
+
+
+    .road-map-card {
+      width: 35%;
+      /* // float: right; */
+      background: #ec3339;
+      padding: 20px 20px;
+      z-index: 1;
+      position: absolute;
+      right: 0;
+      border-radius: 5px;
+      &::before {
+        content: "";
+        width: 25%;
+        height: 20px;
+        background: #ec3339;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -23%;
+        z-index: -1;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+        margin-top: 30px;
+        position: unset;
+        &::before {
+          content: "";
+          width: 20px;
+          height: 30%;
+          top: 50%;
+          transform: translateX(-50%);
+          left: 50%;
+        }
+      }
+      @media (max-width: 425px) {
+        top: 45%;
+      }
+      .card-head {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 0 0 15px;
+        color: #fff;
+      }
+      .card-text {
+        color: #fff;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        @media (max-width: 1199px) {
+          -webkit-line-clamp: 4;
+        }
+      }
+    }
+    &:nth-of-type(even) {
+      .road-map-circle {
+        border-bottom-color: #ec3339;
+        border-left-color: #ec3339;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        @media (max-width: 991px) {
+          border-color: #ec3339;
+        }
+      }
+      .road-map-card {
+        /* // float: left; */
+        left: 0;
+        &::before {
+          right: -23%;
+          left: unset;
+          @media (max-width: 991px) {
+            content: "";
+            width: 20px;
+            height: 30%;
+            top: 50%;
+            transform: translateX(-50%);
+            left: 50%;
+          }
+          @media (max-width: 425px) {
+            top: 45%;
+          }
+        }
+      }
+    }
+  }
+}

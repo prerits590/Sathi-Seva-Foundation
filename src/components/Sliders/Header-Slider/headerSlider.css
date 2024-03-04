@@ -1,0 +1,51 @@
+@media screen and (max-width:786px) {
+    .mobile-version{
+      display: block;   
+    }
+
+    .laptop-version{
+        display: none;
+    }
+
+    .donation-slider-laptop{
+        display: none;
+    }
+
+    .donation-slider-mobile{
+        display: block;
+    }
+
+    /* -------- DONATION SLIDER FILTER BTN ---------  */
+
+    .donation-slider-filter-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        min-width: 90px;
+        height: 90px;
+        padding: 15px;
+        margin: 5px;
+        border: 2px solid lightgray;
+        border-radius: 15px;
+        font-size: small;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      
+      .donation-slider-filter-btn ion-icon{
+        font-size: xx-large;
+      }
+   
+
+}
+
+@media screen and (max-width:1024px) {
+    #myBtnContainerMobile{
+        display: block;
+    }
+
+    #myBtnContainer{
+        display: none;
+    }
+}

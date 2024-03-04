@@ -1,0 +1,17 @@
+/* -------- FOOTER CSS ---------  */
+footer{
+    background: #f8f1f1;
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    border-radius: 30px 30px 0 0;
+    }
+    
+.footer-links li a{
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer-links li a:hover{
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    transform: translateY(-10px) !important;
+}

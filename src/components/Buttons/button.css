@@ -1,0 +1,309 @@
+.white-btn{
+    width: 300px;
+    border: 2px solid black;
+    background: white;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.white-btn:hover{
+     border: 2px solid #e72129;
+    background: #e72129;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+  /* ---------- DONATE BTN CSS ------------  */
+  .donate-btn{
+    background: #e72129;
+    color: white;
+    padding: 15px 30px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .donate-btn:hover{
+    background-color: #b60f14;
+    color: white;
+    transition: all 0.2s ease-in;
+  }
+
+  .show-more{
+    max-width: 350px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #e72129;
+    font-weight: bold;
+    border: 2px solid #e72129;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .show-more:hover{  
+    color: white;
+    border: 2px solid #e72129;
+    background: #e72129;
+    transition: all 0.3s ease-in;
+    
+  }
+
+/* ------------ SEE MORE ---------  */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin: auto;
+   }
+   
+   button.learn-more {
+    display: flex;
+    width: 12rem;
+    margin: auto;
+    height: auto;
+    border: 2px solid #e72129;
+    border-radius: 28px;
+    margin-top: 50px;
+}
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #e72129;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 2rem;
+    color: #e72129;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+   /* ------- RAISE A FUND SECTION BTN -------  */
+   .payment-btn {
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+    background-color: #fff;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .payment-btn-decor {
+    position: absolute;
+    inset: 0;
+    background-color: #e72129;
+    transform: translateX(-100%);
+    transition: transform .3s;
+    z-index: 0;
+  }
+  
+  .payment-btn-content {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .payment-btn__icon {
+    width: 48px;
+    height: 40px;
+    background-color: #e72129;
+    display: grid;
+    place-items: center;
+  }
+  
+  .payment-btn__text {
+    display: inline-block;
+    transition: color .2s;
+    padding: 2px 1.5rem 2px;
+    padding-left: .75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+    font-weight: 500;
+  }
+  
+  .payment-btn:hover .payment-btn__text {
+    color: #fff;
+  }
+  
+  .payment-btn:hover .payment-btn-decor {
+    transform: translate(0);
+  }
+
+.amount-btn{
+  border: 2px solid lightgray;
+}
+
+/* ---------- FILL UP FILL BTN ------  */
+
+.fill-upfill-btn{
+  border: 2px solid #e72129;
+  background: #e72129;
+  color: white;
+  border-radius: 5px;
+  
+}
+
+.fill-upfill-btn:hover{
+  background: white;
+  color: #e72129;
+  transition: all 0.3s ease-in;
+}
+
+/* ----------- END BTN ------------- */
+
+.end-btn{
+  border: 2px solid #c92424;
+  color: #c92424;
+  padding: 15px 30px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.end-btn:hover{
+  background: #c92424;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+
+/* ------ DELETE BTN ----------- */
+
+.delete-btn {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #e62222;
+ }
+ 
+ .delete-btn, .delete-btn span {
+  transition: 200ms;
+ }
+ 
+ .delete-btn .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+ }
+ 
+ .delete-btn .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3px;
+ }
+ 
+ .delete-btn svg {
+  width: 15px;
+  fill: #eee;
+ }
+ 
+ .delete-btn:hover {
+  background: #ff3636;
+ }
+ 
+ .delete-btn:hover .text {
+  color: transparent;
+ }
+ 
+ .delete-btn:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+ }
+ 
+ .delete-btn:focus {
+  outline: none;
+ }
+ 
+ .delete-btn:active .icon svg {
+  transform: scale(0.8);
+ }

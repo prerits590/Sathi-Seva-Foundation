@@ -1,0 +1,15 @@
+
+/* -------- WHATSAPP ICON ------  */
+
+.chat-with-wp{
+    position: fixed;
+    z-index: 1000;
+    right: 2%;
+    bottom: 3%;
+  }
+  
+  .chat-with-wp:hover{
+    scale: 1.2;
+    transition: all 0.2s ease-in;
+  }
+  

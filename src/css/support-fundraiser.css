@@ -1,0 +1,171 @@
+.fundraiser-header {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  /* background: #000; */
+  margin-bottom: 10%;
+}
+
+.fundraiser-header img {
+  /* padding-top: 100px; */
+  /* object-fit: contain; */
+  /* width: 60%; */
+  margin: auto;
+}
+
+.img-header-bg {
+  background-image: linear-gradient(120deg, #d8e2f3 0%, #c2e9fb 100%);
+  /* background: #000; */
+  margin-bottom: 10%;
+}
+
+.img-header-bg img {
+  padding-top: 100px;
+  object-fit: contain;
+  width: 60%;
+  margin: auto;
+}
+
+/* --------- STORY PAGE CSS ------------  */
+
+
+.story-container {
+  display: grid;
+  grid-template-columns: 4rem 3fr 1fr 2rem;
+  grid-column-gap: 2rem;
+}
+
+.story-container-mobile {
+  display: none;
+}
+
+.header {
+  grid-column: 2 / 5;
+  font-size: xx-large;
+}
+
+.header .subheading {
+  font-size: large;
+  color: #455A64;
+}
+
+.content {
+  grid-column: 2 / 3;
+  /* text-align: justify; */
+  /* line-height: 1.4; */
+  font-size: larger;
+}
+
+.content .poster-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.aside {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 100px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: fit-content;
+  padding: 8%;
+  width: 350px;
+  min-width: 250px;
+  border-radius: 20px;
+}
+
+.aside .heading {
+  margin: 0;
+  font-weight: 600;
+}
+
+.aside-mobile {
+  height: fit-content;
+  padding: 0 2%;
+  width: 100%;
+  min-width: 250px;
+  border-radius: 20px;
+}
+
+.aside-mobile .heading {
+  margin: 0;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .story-container {
+    display: none;
+    overflow: hidden;
+  }
+
+  .story-container-mobile {
+    display: block;
+    overflow: hidden;
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .aside {
+    display: block;
+    width: 100%;
+  }
+}
+
+.donor-card {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.donor-card img {
+  height: 100%;
+  width: 40%;
+  margin-right: 0.5rem;
+}
+
+.donor-card p {
+  margin: 0;
+}
+
+.donor-card .title {
+  font-size: 0.8rem;
+}
+
+.donor-card .author {
+  font-size: small;
+}
+
+.payment-box {
+  border: 2px solid lightgray;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.payment-box:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.payment-box-mobile {
+  border: 2px solid lightgray;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  text-align: start;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.payment-box-mobile:hover {
+  border: 2px solid #379a53;
+  background: #fae2e2;
+}

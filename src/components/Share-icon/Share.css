@@ -1,0 +1,14 @@
+.share-icon ion-icon {
+    font-size: xx-large;
+}
+.share-icon{
+    background-color: white;
+    border-radius: 100%;
+
+}
+
+.share-icon:hover{
+    background: #e72129;
+    color: white;
+    transition: all ease 0.3s;
+}
